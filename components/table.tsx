@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import React from 'react';
 
 export default function Table() {
@@ -8,15 +9,21 @@ export default function Table() {
       {/* Corner squares */}
       <div className='relative'>
 
-      <div className="absolute -top-[10px] -left-[10px] w-3 h-3 border-2 border-blue-800"></div>
-      <div className="absolute -top-[10px] -right-[10px] w-3 h-3 border-2 border-blue-800"></div>
-      <div className="absolute -bottom-[10px] -left-[10px] w-3 h-3 border-2 border-blue-800"></div>
-      <div className="absolute -bottom-[10px] -right-[10px] w-3 h-3 border-2 border-blue-800"></div>
+      <div className="absolute -top-[11px] -left-[11px] w-3 h-3 border-b-1 border-r-1 border-[#2B557E]"></div>
+      <div className="absolute -top-[11px] -right-[11px] w-3 h-3 border-b-1 border-l-1 border-[#2B557E]"></div>
+      <div className="absolute -bottom-[11px] -left-[11px] w-3 h-3 border-t-1 border-r-1 border-[#2B557E]"></div>
+      <div className="absolute -bottom-[11px] -right-[11px] w-3 h-3 border-t-1 border-l-1 border-[#2B557E]"></div>
       
-      <div className="border-2 border-blue-800 p-4 relative">
+      <div className="border-1 border-[#2B557E] p-4 relative">
         <div className="text-center mt-4 mb-6 flex flex-col gap-1">
           <span className="text-[#424242]">김로켓님의 사주</span>
           <h1 className="text-[20px] font-bold text-[#424242]">1980년 8월27일 08:10</h1>
+        </div>
+        <div className="absolute top-5 right-0">
+            <Image src="/icons/icon_right.svg" alt="Icon" width={56} height={38} />
+        </div>
+        <div className="absolute top-10 left-0">
+            <Image src="/icons/icon_left.svg" alt="Icon" width={56} height={38} />
         </div>
         <div className="overflow-x-auto">
           <table className="w-full text-center border-collapse font-[ZenAntique]">
